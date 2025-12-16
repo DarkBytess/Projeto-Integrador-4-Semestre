@@ -6,14 +6,13 @@
 Este documento tem como objetivo apresentar uma visão geral do projeto "Monitoramento Inteligente de Plantas", descrevendo seu escopo, objetivos, funcionalidades, stakeholders, restrições, riscos e cronograma. É destinado a todas as partes interessadas envolvidas no desenvolvimento e implementação do sistema.
 
 ### Escopo do Produto
-O projeto propõe o desenvolvimento de um sistema inteligente de monitoramento de plantas, utilizando tecnologias de IoT e Inteligência Artificial. O sistema coletará dados ambientais em tempo real e os processará para auxiliar na tomada de decisões no ambiente agrícola, com foco em hortas experimentais e áreas rurais.
+O projeto propõe o desenvolvimento de um sistema inteligente de monitoramento de plantas, utilizando tecnologias de IoT. O sistema coletará dados ambientais em tempo real e os processará para auxiliar na tomada de decisões no ambiente agrícola, com foco em hortas experimentais e áreas rurais.
 
 ### Definições, Acrônimos e Abreviações
 - *IoT*: Internet das Coisas  
-- *IA*: Inteligência Artificial  
 - *API*: Interface de Programação de Aplicações  
 - *JWT*: JSON Web Token  
-- *AWS*: Amazon Web Services  
+- *RENDER*: Cloud Application  
 - *UI*: Interface de Usuário  
 
 ### Referências
@@ -38,7 +37,7 @@ Dificuldade em manter condições ideais para o crescimento das plantas em ambie
 O sistema consiste em uma aplicação mobile integrada com sensores de IoT, um backend para gerenciamento de dados, e uma interface web para monitoramento remoto. Ele permite a coleta e análise de dados como umidade do solo, temperatura, luminosidade, entre outros.
 
 ### Declaração de Posição do Produto
-Para agricultores e produtores rurais, que necessitam monitorar variáveis ambientais de forma remota e em tempo real, o Monitoramento Inteligente de Plantas é um sistema de IoT com IA que automatiza a coleta de dados e auxilia na tomada de decisão, promovendo melhores práticas agrícolas.
+Para agricultores e produtores rurais, que necessitam monitorar variáveis ambientais de forma remota e em tempo real, o Monitoramento Inteligente de Plantas é um sistema de IoT que automatiza a coleta de dados e auxilia na tomada de decisão, promovendo melhores práticas agrícolas.
 
 ---
 
