@@ -1,4 +1,4 @@
-// URL do backend - usa variável de ambiente em produção
+// URL da API - usa variável de ambiente em produção, localhost em dev
 const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8080";
 
 export interface User {
@@ -15,6 +15,8 @@ export interface Sensor {
   descricao: string;
   limiteMin: number;
   limiteMax: number;
+  latitude?: number;
+  longitude?: number;
 }
 
 export interface SensorData {
@@ -67,6 +69,11 @@ class ApiClient {
     if (!response.ok) {
       const error = await response.text();
       throw new Error(error || "API request failed");
+    }
+
+    // Se a resposta não tiver conteúdo (204 No Content), retorna null
+    if (response.status === 204 || response.headers.get("content-length") === "0") {
+      return null as T;
     }
 
     return response.json();
